@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>FinWise — Signup (WordPress-ready)</title>
+  <title>FinWise — Signup</title>
 
   <!-- Tailwind CDN (optional) -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- local stylesheet -->
+  <!-- stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,8 +21,8 @@
       <div class="brand">FinWise</div>
 
       <div class="blob" aria-hidden="true">
-        <!-- HERO IMAGE (local assets folder) -->
-        <img id="hero" src="assets/Vector5.png" alt="hero" />
+        <!-- HERO IMAGE -->
+        <img id="hero" src="assets/img/Vector5.png" alt="hero" />
 
         <!-- PLAY ICON (inline SVG recommended) -->
         <button class="play" aria-label="play">
@@ -54,10 +54,11 @@
       <div class="controls-wrap" style="margin-top:8px;">
         <div class="controls-left">
           <button id="nextBtn" class="btn" onclick="handleNext()" disabled>Next</button>
-          <div class="step-pill">Step <span id="stepNum">1</span></div>
+          <!-- <div class="step-pill">Step <span id="stepNum">1</span></div> -->
         </div>
 
-        <div class="step-info">
+        <div class="step-info" >
+          <div class="step-pill">Step <span id="stepNum">1</span></div>
           <div class="steps" id="progress">
             <div class="step-line" data-index="1"></div>
             <div class="step-line" data-index="2"></div>
@@ -67,6 +68,20 @@
             <div class="step-line" data-index="6"></div>
           </div>
         </div>
+
+        
+        <!-- <div class="step-info">
+          <div class="step-pill">Step <span id="stepNum">1</span></div>
+          <div class="steps" id="progress">
+            <div class="step-line" data-index="1"></div>
+            <div class="step-line" data-index="2"></div>
+            <div class="step-line" data-index="3"></div>
+            <div class="step-line" data-index="4"></div>
+            <div class="step-line" data-index="5"></div>
+            <div class="step-line" data-index="6"></div>
+          </div>
+        </div> -->
+
       </div>
     </div>
 

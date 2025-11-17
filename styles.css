@@ -24,7 +24,7 @@ body{
 /* LEFT card */
 .left{
   width:680px;
-  min-height:972px;
+  min-height: 90vh;
   background:var(--brand);
   border-radius:18px;
   padding:36px 44px;
@@ -112,7 +112,7 @@ body{
 .sub{ margin-top:12px; text-align:center; color:rgba(255,255,255,0.92); font-size:14px; }
 
 /* RIGHT column */
-.right{ flex:1; min-height:972px; display:flex; flex-direction:column; padding:8px 24px; box-sizing:border-box; }
+.right{ flex:1; min-height:90vh; display:flex; flex-direction:column; padding:8px 24px; box-sizing:border-box; }
 .back{ color:var(--brand); cursor:pointer; display:inline-flex; gap:8px; align-items:center; margin-bottom:6px; }
 .title{ font-size:28px; font-weight:700; margin-bottom:18px; color:#111827; }
 
@@ -127,17 +127,17 @@ body{
 .right-form{ background:white; border-radius:12px; padding:22px; box-shadow:0 18px 40px rgba(14,28,35,0.06); border:1px solid rgba(12,12,12,0.02); width:60%; }
 
 /* controls bottom */
-.controls-wrap{ display:flex; align-items:center; justify-content:space-between; padding-top:12px; box-sizing:border-box; }
+.controls-wrap{ display:flex; align-items:center; justify-content:center; gap: 50px; padding-top:12px; box-sizing:border-box; }
 .controls-left{ display:flex; gap:16px; align-items:center; }
-.btn{ background:var(--brand); color:white; padding:12px 26px; border-radius:12px; box-shadow:0 12px 30px rgba(15,122,115,0.12); border:none; cursor:pointer; }
+.btn{ background:var(--brand); color:white; padding:12px 40px; border-radius:12px; box-shadow:0 12px 30px rgba(15,122,115,0.12); border:none; cursor:pointer; }
 .btn[disabled]{ opacity:.5; cursor:not-allowed; }
-.step-info{ display:flex; align-items:center; gap:14px; color:var(--brand); }
+.step-info{ align-items:center; gap:14px; color:var(--brand); }
 .steps{ display:flex; gap:10px; align-items:center; }
 .step-line{ width:56px; height:6px; border-radius:6px; background:var(--muted); display:inline-block; transition:all .18s; }
 .step-line.active{ background:var(--brand); transform:translateY(-2px); box-shadow:0 8px 20px rgba(15,122,115,0.12); }
 
 /* pill style */
-.step-pill{ padding:6px 10px; border-radius:999px; border:1px solid #e7eeed; color:#0f7a73; }
+.step-pill{ padding:6px 0px; border-radius:999px;  color:#0f7a73; }
 
 /* responsive */
 @media(max-width:1200px){
