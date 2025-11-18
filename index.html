@@ -17,7 +17,7 @@
   <div class="wrap">
 
     <!-- LEFT -->
-    <div class="left ">
+    <div class="left">
       <div class="brand">FinWise</div>
 
       <div class="blob" aria-hidden="true">
@@ -26,7 +26,6 @@
 
         <!-- PLAY ICON (inline SVG recommended) -->
         <button class="play" aria-label="play">
-          <!-- inline triangle SVG keeps it sharp -->
           <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M8 5v14l11-7L8 5z" fill="#fff"/>
           </svg>
@@ -36,13 +35,12 @@
       <div class="headline">
         Let’s Find the <span class="italic">Perfect</span><br/>
         <span class="adviser">Adviser for You.</span>
-              <div class="sub">Answer a few quick questions and we'll match you.</div>
-
       </div>
 
+      <div class="sub">Answer a few quick questions and we'll match you.</div>
     </div>
 
-    <!-- RIGHT (placeholder interactive area) -->
+    <!-- RIGHT -->
     <div class="right">
       <div class="back" onclick="prevStep()">&larr; Back</div>
       <div id="stepTitle" class="title">What are you looking for help with?</div>
@@ -51,13 +49,12 @@
         <div id="dynamicArea"></div>
       </div>
 
-      <div class="controls-wrap" style="margin-top:8px;">
+      <div class="controls-wrap">
         <div class="controls-left">
           <button id="nextBtn" class="btn" onclick="handleNext()" disabled>Next</button>
-          <!-- <div class="step-pill">Step <span id="stepNum">1</span></div> -->
         </div>
 
-        <div class="step-info" >
+        <div class="step-info">
           <div class="step-pill">Step <span id="stepNum">1</span></div>
           <div class="steps" id="progress">
             <div class="step-line" data-index="1"></div>
@@ -68,20 +65,6 @@
             <div class="step-line" data-index="6"></div>
           </div>
         </div>
-
-        
-        <!-- <div class="step-info">
-          <div class="step-pill">Step <span id="stepNum">1</span></div>
-          <div class="steps" id="progress">
-            <div class="step-line" data-index="1"></div>
-            <div class="step-line" data-index="2"></div>
-            <div class="step-line" data-index="3"></div>
-            <div class="step-line" data-index="4"></div>
-            <div class="step-line" data-index="5"></div>
-            <div class="step-line" data-index="6"></div>
-          </div>
-        </div> -->
-
       </div>
     </div>
 
